@@ -4,7 +4,7 @@ Aplicación para la tarea 01 de MC (Matemática computacional) para el Máster d
 ##Instrucciones de instalación
 
 * Actualizar las bases de datos de repositorios
-** sudo apt-get update
+**sudo apt-get update
 * Instalar herramientas para compilar OpenCV 3.0:
 ** sudo apt-get install build-essential cmake git pkg-config
 * Instalar herramientas para leer formatos de imagen:
@@ -60,7 +60,7 @@ Aplicación para la tarea 01 de MC (Matemática computacional) para el Máster d
 ** cd matlotlib
 ** python setup.py install
 
-##References
+##Referencias
 * Instalación de OpenCV
 ** LÓPEZ QUINTERO, MANUEL IGNACIO. Install OpenCV on Ubuntu or Debian. http://milq.github.io/install-opencv-ubuntu-debian/ (Fecha de consulta: 16 de Febrero de 2016).
 ** ROSEBROCK, ADRIAN: Install OpenCV 3.0 and Python 3.4+ on Ubuntu. http://www.pyimagesearch.com/2015/07/20/install-opencv-3-0-and-python-3-4-on-ubuntu/ (Fecha de consulta: 17 de Febrero de 2016).
