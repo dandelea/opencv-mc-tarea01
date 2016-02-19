@@ -49,12 +49,13 @@ def histogram_CLAHE(image_url):
 def compare(img_url):
 	img = cv2.imread(img_url)
 	img = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+
 	equ = cv2.equalizeHist(img)
-	clahe = cv2.createCLAHE() # DEFAULT: Contrast clip limit: 40, block size: 8x8
+	clahe = cv2.createCLAHE(clipLimit=40, tileGridSize=(8,8)) # DEFAULT: Contrast clip limit: 40, block size: 8x8
 	cl1 = clahe.apply(img)
 
 	plt.subplot(2,2,1),plt.imshow(img,cmap = 'gray')
-	plt.title('Original'), plt.xticks([]), plt.yticks([])
+	plt.title('Blurred'), plt.xticks([]), plt.yticks([])
 	plt.subplot(2,2,2),plt.imshow(equ,cmap = 'gray')
 	plt.title('Simple equalization'), plt.xticks([]), plt.yticks([])
 	plt.subplot(2,2,3),plt.imshow(cl1,cmap = 'gray')

@@ -30,7 +30,7 @@ def odd_input(input):
 def main():
 	logo_file = 'logo.png'
 	star_file = 'star.png'
-	chess_file = 'chess.jpg'
+	lena_file = 'lena.png'
 	barcode_file = 'barcode.jpg'
 
 	while(True):
@@ -182,16 +182,16 @@ def main():
 						if method > 0 and method < 6:
 							if method==1:
 								print("\n")
-								edges.sobel(chess_file)
+								edges.sobel(lena_file)
 							elif method==2:
 								print("\n")
-								edges.scharr(chess_file)
+								edges.scharr(lena_file)
 							elif method==3:
 								print("\n")
-								edges.laplacian(chess_file)
+								edges.laplacian(lena_file)
 							elif method==4:
 								print("\n")
-								edges.canny(chess_file)
+								edges.canny(lena_file)
 							else:
 								print("Bye")
 								break;

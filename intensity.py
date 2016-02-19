@@ -101,15 +101,15 @@ def compare(img_url):
 		for j in range(0, width):
 			power_transformation[i, j] = max(0, min(255, int(c2 * power_transformation[i,j]**n)))
 
-	plt.subplot(2,2,1),plt.imshow(gray,cmap = 'gray')
+	plt.subplot(2,3,1),plt.imshow(gray,cmap = 'gray')
 	plt.title('Original'), plt.xticks([]), plt.yticks([])
-	plt.subplot(2,2,2),plt.imshow(inverse,cmap = 'gray')
+	plt.subplot(2,3,2),plt.imshow(inverse,cmap = 'gray')
 	plt.title('Negative'), plt.xticks([]), plt.yticks([])
-	plt.subplot(2,2,3),plt.imshow(log_transformation,cmap = 'gray')
+	plt.subplot(2,3,3),plt.imshow(log_transformation,cmap = 'gray')
 	plt.title('Log transf'), plt.xticks([]), plt.yticks([])
-	plt.subplot(2,2,4),plt.imshow(inverse_log_transformation,cmap = 'gray')
+	plt.subplot(2,3,4),plt.imshow(inverse_log_transformation,cmap = 'gray')
 	plt.title('Inverse log transf'), plt.xticks([]), plt.yticks([])
-	plt.subplot(2,2,2),plt.imshow(power_transformation,cmap = 'gray')
+	plt.subplot(2,3,5),plt.imshow(power_transformation,cmap = 'gray')
 	plt.title('Power-law transf x' + str(n)), plt.xticks([]), plt.yticks([])
 
 	plt.show()
