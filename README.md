@@ -2,6 +2,7 @@
 Aplicación para la tarea 01 de MC (Matemática computacional) para el Máster de Ingeniería Informática de la Universidad de Sevilla.
 
 ##Instrucciones de instalación
+
 *Actualizar las bases de datos de repositorios:
 **sudo apt-get update
 *Instalar herramientas para compilar OpenCV 3.0:
