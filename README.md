@@ -4,10 +4,15 @@ Aplicación para la tarea 01 de MC (Matemática computacional) para el Máster d
 ##Instrucciones de instalación
 
 * Actualizar las bases de datos de repositorios
-**sudo apt-get update
+
+** sudo apt-get update
+
 * Instalar herramientas para compilar OpenCV 3.0:
+
 ** sudo apt-get install build-essential cmake git pkg-config
+
 * Instalar herramientas para leer formatos de imagen:
+
 ** sudo apt-get install libjpeg8-dev libtiff4-dev libjasper-dev libpng12-dev
 * Instalar funcionalidades GUI de OpenCV 3.0:
 ** sudo apt-get install libgtk2.0-dev
