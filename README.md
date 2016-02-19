@@ -3,7 +3,7 @@ Aplicación para la tarea 01 de MC (Matemática computacional) para el Máster d
 
 ##Instrucciones de instalación
 
-* Actualizar las bases de datos de repositorios:
+* Actualizar las bases de datos de repositorios
 ** sudo apt-get update
 * Instalar herramientas para compilar OpenCV 3.0:
 ** sudo apt-get install build-essential cmake git pkg-config
