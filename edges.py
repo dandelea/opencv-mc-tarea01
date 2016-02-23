@@ -10,9 +10,9 @@ def scharr(img_url):
 	mask_size = 3;
 	gray = cv2.GaussianBlur(gray,(mask_size,mask_size), 0)
 
-	scharrx = cv2.convertScaleAbs(cv2.Scharr(gray,cv2.CV_16S,1,0))
-	scharry = cv2.convertScaleAbs(cv2.Scharr(gray,cv2.CV_16S,0,1))
-	scharr = cv2.addWeighted(scharrx,0.5,scharry,0.5,0)
+	scharrx = cv2.Scharr(gray,cv2.CV_16S,1,0)
+	scharry = cv2.Scharr(gray,cv2.CV_16S,0,1)
+	scharr = cv2.convertScaleAbs(cv2.addWeighted(scharrx,0.5,scharry,0.5,0))
 	# Otsu's thresholding
 	ret,th = cv2.threshold(np.array(scharr, np.uint8),0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
 
@@ -54,9 +54,9 @@ def sobel(img_url):
 	mask_size = 3;
 	gray = cv2.GaussianBlur(gray,(mask_size,mask_size), 0)
 
-	sobelx = cv2.convertScaleAbs(cv2.Sobel(gray,cv2.CV_16S,1,0,ksize = 3, scale = 1, delta = 0,borderType = cv2.BORDER_DEFAULT))
-	sobely = cv2.convertScaleAbs(cv2.Sobel(gray,cv2.CV_16S,0,1,ksize = 3, scale = 1, delta = 0,borderType = cv2.BORDER_DEFAULT))
-	sobel = cv2.addWeighted(sobelx,0.5,sobely,0.5,0)
+	sobelx = cv2.Sobel(gray,cv2.CV_16S,1,0,ksize = 3, scale = 1, delta = 0,borderType = cv2.BORDER_DEFAULT)
+	sobely = cv2.Sobel(gray,cv2.CV_16S,0,1,ksize = 3, scale = 1, delta = 0,borderType = cv2.BORDER_DEFAULT)
+	sobel = cv2.convertScaleAbs(cv2.addWeighted(sobelx,0.5,sobely,0.5,0))
 	# Otsu's thresholding
 	ret,th = cv2.threshold(np.array(sobel, np.uint8),0,255,cv2.THRESH_BINARY+cv2.THRESH_OTSU)
 
