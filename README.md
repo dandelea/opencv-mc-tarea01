@@ -56,8 +56,9 @@ Aplicación para la tarea 01 de MC (Matemática computacional) para el Máster d
  * cd ~/.virtualenvs/cv/lib/python3.4/site-packages/
  * ln -s /usr/local/lib/python3.4/site-packages/cv2.cpython-34m.so cv2.so
 * Instalar Matplotlib para gráficas de histogramas:
+ * cd ~
  * git clone https://github.com/matplotlib/matplotlib.git
- * cd matlotlib
+ * cd matplotlib
  * python setup.py install
 
 ##Referencias
