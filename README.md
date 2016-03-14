@@ -47,19 +47,21 @@ Aplicación para la tarea 01 de MC (Matemática computacional) para el Máster d
 	-D INSTALL_PYTHON_EXAMPLES=ON \
 	-D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules \
 	-D BUILD_EXAMPLES=ON ..
- * <code>make -j4</code>
+ * sudo make -j4
  * sudo make install
  * sudo ldconfig
-* Copiar OpenCV a nuestro entorno virtual de trabajo:
- * cd ~/.virtualenvs/cv/lib/python3.4/site-packages/
- * ln -s /usr/local/lib/python3.4/site-packages/cv2.cpython-34m.so cv2.so
 * Crear el entorno virtual
  * mkvirtualenv cv
  * workon cv
+* Copiar OpenCV a nuestro entorno virtual de trabajo:
+ * cd ~/.virtualenvs/cv/lib/python3.4/site-packages/
+ * ln -s /usr/local/lib/python3.4/dist-packages/cv2.cpython-34m.so cv2.so
 * Instalar numpy:
  * pip install numpy
 * Instalar Matplotlib y Tkinter para gráficas de histogramas:
  * sudo apt-get install tcl-dev tk-dev python-tk python3-tk
+ * sudo apt-get install python-matplotlib
+ * sudo apt-get build-dep python-matplotlib
  * cd ~
  * git clone https://github.com/matplotlib/matplotlib.git
  * cd matplotlib
