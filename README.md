@@ -28,8 +28,6 @@ Aplicación para la tarea 01 de MC (Matemática computacional) para el Máster d
  * source ~/.bashrc
 * Instalar Python 3.4:
  * sudo apt-get install python3.4-dev
-* Instalar numpy:
- * pip install numpy
 * Descargar los repositorios de OpenCV:
  * cd ~
  * git clone https://github.com/Itseez/opencv.git
@@ -55,7 +53,13 @@ Aplicación para la tarea 01 de MC (Matemática computacional) para el Máster d
 * Copiar OpenCV a nuestro entorno virtual de trabajo:
  * cd ~/.virtualenvs/cv/lib/python3.4/site-packages/
  * ln -s /usr/local/lib/python3.4/site-packages/cv2.cpython-34m.so cv2.so
-* Instalar Matplotlib para gráficas de histogramas:
+* Crear el entorno virtual
+ * mkvirtualenv cv
+ * workon cv
+* Instalar numpy:
+ * pip install numpy
+* Instalar Matplotlib y Tkinter para gráficas de histogramas:
+ * sudo apt-get install tcl-dev tk-dev python-tk python3-tk
  * cd ~
  * git clone https://github.com/matplotlib/matplotlib.git
  * cd matplotlib
